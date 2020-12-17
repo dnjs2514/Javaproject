@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="427.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DupdateController">
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="749.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/abc7.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="13.0" layoutY="57.0" prefHeight="155.0" prefWidth="105.0" spacing="10.0">
+         <children>
+            <Label text="name" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="closed" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="shopname" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="25.0" text="designerimg" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="118.0" layoutY="57.0" prefHeight="155.0" prefWidth="203.0" spacing="10.0">
+         <children>
+            <TextField fx:id="designername">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="closed">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="shopname">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="designerimg">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <TableView fx:id="tvdupdate" layoutX="342.0" layoutY="57.0" prefHeight="303.0" prefWidth="387.0">
+        <columns>
+          <TableColumn fx:id="tvdesignername" prefWidth="89.0" text="Dname" />
+          <TableColumn fx:id="tvclosed" prefWidth="72.0" text="closed" />
+            <TableColumn fx:id="tvshopname" prefWidth="83.0" text="shopname" />
+            <TableColumn fx:id="tvdesignerimg" prefWidth="143.0" text="img" />
+        </columns>
+      </TableView>
+      <ButtonBar buttonMinWidth="65.0" layoutY="212.0" prefHeight="50.0" prefWidth="321.0">
+        <buttons>
+          <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#handelButton" style="-fx-background-color: white;" text="INSERT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="219.0" layoutY="19.0" mnemonicParsing="false" onAction="#handelButton" style="-fx-background-color: white;" text="UPDATE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="134.0" layoutY="19.0" minWidth="57.0" mnemonicParsing="false" onAction="#handelButton" prefHeight="28.0" prefWidth="145.0" style="-fx-background-color: white;" text="DELETE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

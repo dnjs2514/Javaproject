@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.tryreviewController">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="500.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/ABC3.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="67.0" prefWidth="500.0" style="-fx-border-color: black;" text="리뷰 작성">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="98.0" prefHeight="30.0" prefWidth="86.0" text="리뷰아이디 :" />
+      <Label layoutX="41.0" layoutY="223.0" prefHeight="30.0" prefWidth="86.0" text="리뷰점수 :" />
+      <Label layoutX="41.0" layoutY="276.0" prefHeight="30.0" prefWidth="86.0" text="리뷰작성" />
+      <Label layoutX="41.0" layoutY="190.0" prefHeight="30.0" prefWidth="86.0" text="디자이너이름 :" />
+      <Label layoutX="41.0" layoutY="144.0" prefHeight="30.0" prefWidth="86.0" text="비밀번호 : " />
+      <JFXTextField fx:id="reviewid" layoutX="113.0" layoutY="102.0" />
+      <JFXButton fx:id="btnrereview" layoutX="251.0" layoutY="101.0" onAction="#createrbtnrereview" prefHeight="22.0" prefWidth="86.0" style="-fx-border-color: black;" text="중복확인" />
+      <JFXPasswordField fx:id="reviewpassword" layoutX="103.0" layoutY="148.0" promptText="삭제시 사용됩니다." unFocusColor="BLACK" />
+      <JFXTextField fx:id="designername" layoutX="127.0" layoutY="194.0" />
+      <TextArea fx:id="review" layoutX="41.0" layoutY="314.0" prefHeight="88.0" prefWidth="419.0" text="&#10;" wrapText="true" />
+      <JFXCheckBox fx:id="reviewcheck" layoutX="45.0" layoutY="412.0" prefHeight="30.0" prefWidth="260.0" text="비밀번호를 잊을경우 삭제가 불가능합니다." />
+      <JFXButton fx:id="btnreview" layoutX="41.0" layoutY="455.0" onAction="#createrbtnreview" prefHeight="67.0" prefWidth="419.0" style="-fx-border-color: black;" text="작성완료" />
+      <TextField fx:id="score" layoutX="105.0" layoutY="227.0" prefHeight="23.0" prefWidth="45.0" />
+      <Label layoutX="165.0" layoutY="223.0" prefHeight="30.0" prefWidth="191.0" text="10점 이하로 입력가능합니다." />
+   </children>
+</AnchorPane>

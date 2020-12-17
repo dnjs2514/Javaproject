@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="450.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/ABC1.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="id" layoutX="251.0" layoutY="44.0" prefHeight="30.0" prefWidth="150.0" promptText="id" AnchorPane.topAnchor="100.0" />
+      <JFXPasswordField fx:id="password" layoutX="251.0" layoutY="107.0" prefHeight="30.0" prefWidth="150.0" promptText="password" AnchorPane.topAnchor="150.0" />
+      <JFXButton fx:id="btnRegister" layoutX="251.0" layoutY="291.0" onAction="#createregister" text="Register" />
+      <JFXButton fx:id="btnLogin" layoutX="352.0" layoutY="291.0" onAction="#createLogin" text="Login" />
+   </children>
+</AnchorPane>

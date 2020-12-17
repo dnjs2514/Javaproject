@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="designerbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#createrdesignerbox" prefHeight="211.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.designerController">
+   <children>
+      <AnchorPane prefHeight="211.0" prefWidth="507.0">
+         <children>
+            <ImageView cache="true" fitHeight="183.0" fitWidth="473.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/11111111111111111111111111111111111.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="designerimg" fitHeight="130.0" fitWidth="153.0" layoutX="25.0" layoutY="50.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/윤민디자이너.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="206.0" layoutY="50.0" prefHeight="24.0" prefWidth="142.0">
+               <children>
+                  <Label fx:id="shopname" prefHeight="24.0" prefWidth="141.0" text="준오헤어">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox layoutX="206.0" layoutY="84.0" prefHeight="24.0" prefWidth="142.0">
+               <children>
+                  <Label fx:id="designername" prefHeight="42.0" prefWidth="142.0" text="김윤수 디자이너 ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox layoutX="207.0" layoutY="116.0" prefHeight="30.0" prefWidth="101.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="67.0" text="휴무">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="designerclose" prefHeight="24.0" prefWidth="67.0" text="목요일" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DupdatepageController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="450.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/112.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="Dupdateid" layoutX="150.0" layoutY="130.0" prefHeight="30.0" prefWidth="150.0" promptText="id" />
+      <JFXPasswordField fx:id="Dupdatepassword" layoutX="150.0" layoutY="200.0" prefHeight="30.0" prefWidth="150.0" promptText="password" />
+      <JFXButton fx:id="btnDupdateLogin" layoutX="194.0" layoutY="289.0" onAction="#createDupdateLogin" style="-fx-border-color: black;" text="Login" />
+   </children>
+</AnchorPane>

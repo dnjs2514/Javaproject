@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="682.0" prefWidth="1058.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.updateController">
+   <children>
+      <ImageView fitHeight="320.0" fitWidth="344.0" layoutY="362.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/abc5.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="13.0" layoutY="57.0" prefHeight="258.0" prefWidth="105.0" spacing="10.0">
+         <children>
+            <Label text="shopid">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="25.0" text="tel">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="40.0" text="address">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="img">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="type">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="118.0" layoutY="57.0" prefHeight="258.0" prefWidth="203.0" spacing="10.0">
+         <children>
+            <TextField fx:id="shopid">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="shoppassword">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="shopname">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="shoptel">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="shopaddress">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="img">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="type">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <TableView fx:id="tvupdate" layoutX="342.0" layoutY="57.0" prefHeight="552.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="tvshopid" prefWidth="89.0" text="shopid" />
+          <TableColumn fx:id="tvshoppassword" prefWidth="108.0" text="password" />
+            <TableColumn fx:id="tvshopname" prefWidth="78.0" text="name" />
+            <TableColumn fx:id="tvshoptel" prefWidth="112.0" text="tel" />
+            <TableColumn fx:id="tvshopaddress" prefWidth="114.0" text="address" />
+            <TableColumn fx:id="tvimg" prefWidth="164.0" text="img" />
+            <TableColumn fx:id="tvtype" prefWidth="50.0" text="type" />
+        </columns>
+      </TableView>
+      <ButtonBar buttonMinWidth="65.0" layoutX="38.0" layoutY="320.0" prefHeight="50.0" prefWidth="290.0">
+        <buttons>
+          <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#handelButton" text="INSERT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUpdate" layoutX="219.0" layoutY="19.0" mnemonicParsing="false" onAction="#handelButton" text="UPDATE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelete" layoutX="134.0" layoutY="19.0" mnemonicParsing="false" onAction="#handelButton" text="DELETE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

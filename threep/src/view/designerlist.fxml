@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="615.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.designerlistController">
+   <children>
+      <ImageView fitHeight="165.0" fitWidth="505.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../IMG/wh.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="60.0" prefHeight="25.0" prefWidth="210.0" text="디자이너정보">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="designerfield" layoutX="127.0" layoutY="99.0" prefHeight="12.0" prefWidth="251.0" promptText="미용실이름을 입력하세요." style="-fx-border-color: black;" />
+      <JFXButton fx:id="designerbtn" layoutX="384.0" layoutY="99.0" onAction="#btndesigner" prefHeight="25.0" prefWidth="42.0" style="-fx-border-color: black;" text="검색" />
+      <HBox layoutY="162.0" prefHeight="549.0" prefWidth="503.0">
+         <children>
+            <ScrollPane fx:id="dscroll" prefHeight="549.0" prefWidth="502.0">
+               <content>
+                  <VBox fx:id="designerbox" prefHeight="550.0" prefWidth="500.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button fx:id="dupdate" layoutX="411.0" layoutY="139.0" mnemonicParsing="false" onAction="#btndupdate" prefHeight="23.0" prefWidth="92.0" text="디자이너 수정" />
+   </children>
+</AnchorPane>

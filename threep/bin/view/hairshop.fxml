@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#createrhairbox" prefHeight="150.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.hairshopController">
+   <children>
+      <AnchorPane prefHeight="152.0" prefWidth="283.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="480.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../IMG/11111111111111111111111111111111111.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img" fitHeight="110.0" fitWidth="148.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/우리동네미용실.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="shopname" alignment="CENTER" layoutX="162.0" layoutY="30.0" prefHeight="42.0" prefWidth="148.0" text="우리동네 미용실">
+               <graphic>
+                  <VBox prefHeight="150.0" prefWidth="42.0">
+                     <children>
+                        <VBox prefHeight="63.0" prefWidth="224.0">
+                           <children>
+                              <VBox prefHeight="31.0" prefWidth="185.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </graphic>
+            </Label>
+            <Label fx:id="shopaddress" layoutX="181.0" layoutY="85.0" prefHeight="57.0" prefWidth="290.0" text="부산광역시 부산진구 양정동123-4" wrapText="true" />
+            <Label fx:id="shoptel" layoutX="216.0" layoutY="67.0" prefHeight="36.0" prefWidth="189.0" text="051-555-5555" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
